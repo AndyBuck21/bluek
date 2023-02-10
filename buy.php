@@ -146,27 +146,27 @@
             <div class="row billing-fields">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 sm-margin-30px-bottom">
                     <div class="create-ac-content bg-light-gray padding-20px-all">
-                        <form>
+                        <form method="post" action="func.php">
                             <fieldset>
                                 <h2 class="login-title mb-3">Billing details</h2>
                                 <div class="row">
                                     <div class="form-group col-md-6 col-lg-6 col-xl-6 required">
                                         <label for="input-fullname">Full Name <span class="required-f">*</span></label>
-                                        <input name="fname" value="" id="input-fullname" type="text">
+                                        <input name="fname" value="" id="input-fullname" type="text" required>
                                     </div>
                                     <div class="form-group col-md-6 col-lg-6 col-xl-6 required">
                                         <label for="input-email">Email <span class="required-f">*</span></label>
-                                        <input name="email" value="" id="input-email" type="email">
+                                        <input name="email" value="" id="input-email" type="email" required>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="form-group col-md-6 col-lg-6 col-xl-6 required">
                                         <label for="input-pn">Phone Number  <span class="required-f">*</span></label>
-                                        <input name="pn" value="" id="input-pn" type="tel">
+                                        <input name="pn" value="" id="input-pn" type="tel" required>
                                     </div>
                                     <div class="form-group col-md-6 col-lg-6 col-xl-6 required">
                                         <label for="input-address">Address <span class="required-f">*</span></label>
-                                        <input name="address" value="" id="input-address" type="text">
+                                        <input name="address" value="" id="input-address" type="text" required>
                                     </div>
                                 </div>
                             </fieldset>
@@ -175,17 +175,17 @@
                                 <div class="row">
                                     <div class="form-group col-md-6 col-lg-6 col-xl-6">
                                         <label for="input-city">City <span class="required-f">*</span></label>
-                                        <input name="city" value="" id="input-city" type="text">
+                                        <input name="city" value="" id="input-city" type="text" required>
                                     </div>
                                     <div class="form-group col-md-6 col-lg-6 col-xl-6 required">
                                         <label for="input-state">State <span class="required-f">*</span></label>
-                                        <input name="state" value="" id="input-state" type="text">
+                                        <input name="state" value="" id="input-state" type="text" required>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="form-group col-md-6 col-lg-6 col-xl-6">
                                         <label for="input-postcode">Zip Code <span class="required-f">*</span></label>
-                                        <input name="postcode" value="" id="input-postcode" type="text">
+                                        <input name="postcode" value="" id="input-postcode" type="text" required>
                                     </div>
                                     
                                 </div>
