@@ -62,7 +62,7 @@
             <div class="row align-items-center">
             	<!--Desktop Logo-->
                 <div class="logo col-md-2 col-lg-2 d-none d-lg-block">
-                    <a href="index.html">
+                    <a href="index.php">
                     	<img src="assets/img/l.png" height="80px" width="80px" alt="Bluekitty" title="Bluekitty" />
                     </a>
                 </div>
@@ -82,15 +82,15 @@
                         
                         
                         
-                        <li class="lvl1"><a href="index.html"><b>Home</b></a></li>
-                        <li class="lvl1"><a href="reserve.html"><b>Reserve</b></a></li>
+                        <li class="lvl1"><a href="index.php"><b>Home</b></a></li>
+                        <li class="lvl1"><a href="reserve.php"><b>Reserve</b></a></li>
                       </ul>
                     </nav>
                     <!--End Desktop Menu-->
                 </div>
                 <div class="col-6 col-sm-6 col-md-6 col-lg-2 d-block d-lg-none mobile-logo">
                 	<div class="logo">
-                        <a href="index.html">
+                        <a href="index.php">
                             <img src="assets/img/l.png" height="35px" width="35px" alt="Bluekitty" title="Bluekitty" />
                         </a>
                     </div>
@@ -104,7 +104,7 @@
     <div class="mobile-nav-wrapper" role="navigation">
 		<div class="closemobileMenu"><i class="icon anm anm-times-l pull-right"></i> Close Menu</div>
         <ul id="MobileNav" class="mobile-nav">
-        	<li class="lvl1 parent megamenu"><a href="index.html">Home <i class="anm anm-plus-l"></i></a>
+        	<li class="lvl1 parent megamenu"><a href="index.php">Home <i class="anm anm-plus-l"></i></a>
           
         </li>
         	
@@ -116,7 +116,7 @@
           
         	
         </li>
-        	<li class="lvl1"><a href="buy.html"><b>Buy NoW</b></a>
+        	<li class="lvl1"><a href="buy.php"><b>Buy NoW</b></a>
         </li>
       </ul>
 	</div>
