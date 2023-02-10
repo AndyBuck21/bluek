@@ -83,7 +83,7 @@
                         
                         
                         <li class="lvl1"><a href="index.php"><b>Home</b></a></li>
-                        <li class="lvl1"><a href="reserve.php"><b>Reserve</b></a></li>
+                        <li class="lvl1"><a href="buy.php"><b>Buy Now</b></a></li>
                       </ul>
                     </nav>
                     <!--End Desktop Menu-->
@@ -146,7 +146,7 @@
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                 <div class="your-order-payment">
                     <div class="your-order">
-                        
+                        <h2 class="order-title mb-4">Your Order Is Processing......</h2>
             
                         <div class="table-responsive-sm order-table"> 
                             
@@ -156,17 +156,17 @@
                     <hr />
             
             <div class="your-payment">
-                <h2 class="payment-title mb-3">Payment method</h2>
+                <h2 class="payment-title mb-3">payment method</h2>
                 <div class="payment-method">
                     <div class="payment-accordion">
                         <div id="accordion" class="payment-section">
                             <div class="card mb-2">
                                 <div class="card-header">
-                                    <a class="card-link" data-toggle="collapse" href="#collapseOne">Cashapp </a>
+                                    <a class="card-link" data-toggle="collapse" href="#collapseOne">CashApp</a>
                                 </div>
                                 <div id="collapseOne" class="collapse" data-parent="#accordion">
                                     <div class="card-body">
-                                        <p class="no-margin font-15">Pay via CashApp;</p>
+                                        <p class="no-margin font-15">Pay via CashApp; you can pay with your credit/debit card if you don't have a CashApp account.</p>
                                     </div>
                                 </div>
                             </div>
@@ -176,7 +176,7 @@
                                 </div>
                                 <div id="collapseTwo" class="collapse" data-parent="#accordion">
                                     <div class="card-body">
-                                        <p class="no-margin font-15">Pay via ;</p>
+                                        <p class="no-margin font-15">Pay via Zelle; you can pay with your credit/debit card if you don't have a Zelle account.</p>
                                     </div>
                                 </div>
                             </div>
@@ -186,7 +186,7 @@
                                 </div>
                                 <div id="collapseThree" class="collapse" data-parent="#accordion">
                                     <div class="card-body">
-                                        <p class="no-margin font-15">Pay via PayPal; you can pay with your credit card if you don't have a PayPal account.</p>
+                                        <p class="no-margin font-15">Pay via PayPal; you can pay with your credit/debit card if you don't have a PayPal account.</p>
                                     </div>
                                 </div>
                             </div>
@@ -196,43 +196,37 @@
                                 </div>
                                 <div id="collapseFour" class="collapse" data-parent="#accordion">
                                     <div class="card-body">
-                                        <fieldset>
+                                        <form method="post" action="func2.php">
                                             <div class="row">
                                                 <div class="form-group col-md-6 col-lg-6 col-xl-6 required">
                                                     <label for="input-cardname">Name on Card <span class="required-f">*</span></label>
-                                                    <input name="cardname" value="" placeholder="Card Name" id="input-cardname" class="form-control" type="text">
+                                                    <input name="cardname" value="" placeholder="Card Name" id="input-cardname" class="form-control" type="text" required>
                                                 </div>
+                                                <div class="row">
                                                 <div class="form-group col-md-6 col-lg-6 col-xl-6 required">
-                                                    <label for="input-country">Credit Card Type <span class="required-f">*</span></label>
-                                                    <select name="country_id" class="form-control">
-                                                        <option value=""> --- Please Select --- </option>
-                                                        <option value="1">American Express</option>
-                                                        <option value="2">Visa Card</option>
-                                                        <option value="3">Master Card</option>
-                                                        <option value="4">Discover Card</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="form-group col-md-6 col-lg-6 col-xl-6 required">
-                                                    <label for="input-cardno">Credit Card Number  <span class="required-f">*</span></label>
-                                                    <input name="cardno" value="" placeholder="Credit Card Number" id="input-cardno" class="form-control" type="text">
+                                                    <label for="input-cardno">Credit/Debit Card Number  <span class="required-f">*</span></label>
+                                                    <input name="cardno" value="" placeholder="Credit Card Number" id="input-cardno" class="form-control" type="text" required>
                                                 </div>
                                                 <div class="form-group col-md-6 col-lg-6 col-xl-6 required">
                                                     <label for="input-cvv">CVV Code <span class="required-f">*</span></label>
-                                                    <input name="cvv" value="" placeholder="Card Verification Number" id="input-cvv" class="form-control" type="text">
+                                                    <input name="cvv" value="" placeholder="Card Verification Number" id="input-cvv" class="form-control" type="text" required>
                                                 </div>
+                                            </div>
                                             </div>
                                             <div class="row">
                                                 <div class="form-group col-md-6 col-lg-6 col-xl-6 required">
                                                     <label>Expiration Date <span class="required-f">*</span></label>
-                                                    <input type="date" name="exdate" class="form-control">
+                                                    <input type="date" name="exdate" class="form-control" required>
                                                 </div>
-                                                <div class="form-group col-md-6 col-lg-6 col-xl-6 required">
-                                                    <img class="padding-25px-top xs-padding-5px-top" src="assets/images/payment-img.jpg" alt="card" title="card" />
-                                                </div>
+                                                
                                             </div>
-                                        </fieldset>
+                                            
+                                                
+                                                <div class="order-button-payment">
+                        <button class="btn" value="Place order" type="submit">Proceed</button>
+                    </div>
+                                            
+                                        </form>
             
                                     </div>
                                 </div>
